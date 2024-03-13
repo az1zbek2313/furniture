@@ -1,0 +1,42 @@
+.wrapper{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.image{
+    width: 48%;
+    height: 384px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.textWrap{
+    width: 48%;
+}
+.textWrap .capitalize{
+    text-transform: capitalize;
+}
+.opacity{
+    opacity: 0.3;
+    font-weight: 700;
+}
+.color{
+    padding: 8px 12px;
+    border-radius:50%;
+    margin-right: 12px;
+    border:none;
+    margin-bottom: 10px;
+}
+.border{
+    border:2px solid blueviolet
+
+}
+.select{
+    border:none;
+    width: 100%;
+    outline: none;
+}
+.btn {
+    background:rgb(70, 58, 161);
+    margin-bottom: 50px;
+}

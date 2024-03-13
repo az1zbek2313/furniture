@@ -1,0 +1,72 @@
+.box {
+    height: 30px;
+    padding: 0;
+}
+.box .navbar{
+    padding: 0;
+}
+.box .navbar .logout-section{
+    width: 100%;
+    display:flex;
+    justify-content: end;
+    align-items:center;
+    gap:30px;
+
+}
+.box .navbar .logout-section p{
+    color:white;
+    font-size: 14px;
+    margin-top: 3px;
+}
+.box .navbar section .btnn{
+    color:white;
+    padding-bottom: 16px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+.navbar-brand{
+    color:white;
+
+}
+.navbar{
+    background:rgb(181, 230, 247);
+}
+.navbar .container-fluid{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.navbar-nav .nav-item a.active{
+    background: black;
+    color: white;
+    border-radius: 15px;
+}
+.navbar-nav .nav-item .nav-link{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.5s;
+    border-radius: 15px;
+}
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+.header-icons svg{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.header-icons svg:hover{
+    background:transparent;
+    border-radius:10px;
+    box-shadow: 0 0 8px black;
+    padding: 2px;
+}
+
+.header-icons .savat{
+    font-size: 30px;
+    color: rgb(48, 48, 148);
+}
