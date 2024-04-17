@@ -33,7 +33,7 @@ function Card(props) {
             {props.data.attributes.company}
           </p>
         )}
-        <span className="text-secondary">${props.data.attributes.price}</span>
+        <span className="text-secondary">${props.data.attributes.price / 100}</span>
       </div>
     </div>
   );

@@ -100,7 +100,7 @@ function Single(props) {
           >
             {message.attributes.company}
           </h4>
-          <p className="mt-3 text-xl">${message.attributes.price}</p>
+          <p className="mt-3 text-xl">${message.attributes.price / 100}</p>
           <p className="mt-6 leading-8">{message.attributes.description}</p>
           <div className={`mt-6`}>
             <h4 className="text-md font-medium tracking-wider capitalize">

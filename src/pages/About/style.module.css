@@ -1,0 +1,51 @@
+:root{
+    --text-color:rgba(2, 29, 72, 0.8);
+}
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 80px 32px;
+}
+.wrapBox{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.wrapBox h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color:var(--text-color);
+}
+.wrapBox button{
+    background:rgb(5, 122, 255);
+    border-radius:16px;
+    padding:18px 22px;
+    font-size: 2.5rem;
+    border: none;
+    line-height: 2.5rem;
+    outline: none;
+    letter-spacing: .1em;
+    color:rgb(255, 255, 255, 0.8);
+    font-weight: 700;
+}
+.wrapText{
+    max-width: 48rem;
+    margin: 0 auto;
+    margin-top: 40px;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    color:var(--text-color);
+    font-weight: 400;
+}
+@media screen and (max-width:1400px) {
+    .wrapper{
+        max-width: 1150px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .wrapper{
+        max-width: 960px;
+    }
+}

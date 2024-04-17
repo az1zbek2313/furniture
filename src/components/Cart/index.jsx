@@ -81,10 +81,11 @@ function Savat(props) {
           <option selected={props.data.amount == '17' ? true : false} value="17">17</option>
           <option selected={props.data.amount == '18' ? true : false} value="18">18</option>
           <option selected={props.data.amount == '19' ? true : false} value="19">19</option>
+          <option selected={props.data.amount == '20' ? true : false} value="20">20</option>
         </select>
         <NavLink onClick={RemoveItem}>remove</NavLink>
       </div>
-      <h2>${props.data.price}</h2>
+      <h2>${props.data.price / 100}</h2>
     </div>
   );
 }
