@@ -1,6 +1,5 @@
 import style from "./style.module.css";
 import useFetch from "../../hooks/function";
-import Filter from "../../components/Filter";
 import { RingLoader } from "react-spinners";
 import Card from "../../components/Card";
 import { NavLink } from "react-router-dom";
