@@ -8,8 +8,9 @@ import useFetch from '../../hooks/function';
 import { useNavigate } from 'react-router-dom';
 import Card from '../../components/Card';
 
-function Home() {
-  const defaultDark = localStorage.getItem('dark') ? JSON.parse(localStorage.getItem('dark')) : false
+function Home({dark}) {
+
+  console.log(dark);
   const message = useFetch(
     `https://strapi-store-server.onrender.com/api/products?featured=true`
   );
@@ -18,7 +19,7 @@ function Home() {
     <main className="main main--container">
     <div className="grid mt-20 lg:grid-cols-2 gap-24 items-center">
       <div className="hero">
-        <h1 style={defaultDark && {color:"white"}} id='h1' className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
+        <h1 style={dark ? {color:"white"}:{color:"rgba(2, 29, 72, 0.8)"}} className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
           We are changing the way people shop
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-8">
@@ -59,7 +60,7 @@ function Home() {
       </div>
     </div>
 
-    <h2 className="main--title text-3xl font-medium tracking-wider capitalize">Featured Products</h2>
+    <h2 style={dark ? {color:"white"}:{color:"rgba(2, 29, 72, 0.8)"}} className="main--title text-3xl font-medium tracking-wider capitalize">Featured Products</h2>
     <div className="card-home-wrapper">
       {
         !message.loading ? 

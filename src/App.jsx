@@ -29,8 +29,8 @@ function App() {
   return (
     <Routes>  
       <Route path='/' element={<Layout setDark={setDark} dark={dark}/>}>
-        <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
+        <Route index element={<Home setDark={setDark} dark={dark}/>} />
+        <Route path='about' element={<About setDark={setDark} dark={dark}/>} />
         <Route path='products'>
           <Route index={true} element={<Products />} />
           <Route path='id' element={<Single/>} />
