@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import Card from '../../components/Card';
 
 function Home() {
-  const navigate = useNavigate();
+  const defaultDark = localStorage.getItem('dark') ? JSON.parse(localStorage.getItem('dark')) : false
   const message = useFetch(
     `https://strapi-store-server.onrender.com/api/products?featured=true`
   );
@@ -18,7 +18,7 @@ function Home() {
     <main className="main main--container">
     <div className="grid mt-20 lg:grid-cols-2 gap-24 items-center">
       <div className="hero">
-        <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
+        <h1 style={defaultDark && {color:"white"}} id='h1' className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
           We are changing the way people shop
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-8">

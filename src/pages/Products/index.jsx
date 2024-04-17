@@ -45,7 +45,6 @@ function Products() {
 
   return (
     <div className="container-fluid container-lg">
-      <Filter></Filter>
 
       <div className="card-wrapper">
         <header className={style.header}>
